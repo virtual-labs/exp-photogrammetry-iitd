@@ -17,7 +17,9 @@ distance between points A and B is 100 mm.
 
 
 If using MATLAB, following command can be used
+
 I = imread('filename');
+
 Imshow(I)
 
 The concept can be extended to structural dynamics problems also by taking pictures at a very small
