@@ -31,7 +31,7 @@ Step 2: b). Click on next button.<br>
 <img src="images/s10.png"/><br>
 Step 3: a). Click on add button to add weight in the lab.<br>
 <img src="images/s11.png"/><br>
-Step 3: b). Click on weight to arrange them on the weight plate.<br>
+Step 3: b). Click on weight to arrange it on the weight plate.<br>
 <img src="images/s12.png"/><br>
 Step 3: c). Click on camera icon to take screenshot.<br>
 <img src="images/s13.png"/><br>
