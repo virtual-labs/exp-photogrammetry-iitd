@@ -6,9 +6,9 @@ fixed above the beam. The reference attached to structure is at the mid point of
 The beam is loaded at regular intervals of one hour throughout the day with varying loads, resulting in
 varying deflections. 
 
-<img src="images/1.jpg" height="200px">
+<center><img src="images/1.jpg" height="400px">
 
-Fig. 1 Experimental set up 
+Fig. 1 Experimental set up </center>
 
 The photographs can be analysed for deflections using MS paint, MS word, ADOBE Photoshop or
 MATLAB. The pixel count of the normal drawn from C to AB can be used to determine the vertical

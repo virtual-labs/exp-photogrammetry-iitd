@@ -77,6 +77,9 @@ function navNext6()
         document.getElementById("canvas5").style.visibility="hidden";
 
         document.getElementById("canvas6").style.visibility="visible";
+        
+        document.getElementById("arrow_note_dwld").style.visibility="visible";
+        
         setTimeout(function()
             { 
                 document.getElementById("arrowrestart").style.visibility="visible";
