@@ -1,12 +1,12 @@
 ### These steps will be followed for the experiment
 
-**PRE EXPERIMENT TASK**
+<!-- **PRE EXPERIMENT TASK**
 
 1) What is photogrammetry technique?
 2) What is principle of photogrammetry technique?
 3) How is this principle used in satellite imagery?
 4) What is the distance between two reference points in this experiment?
-5) What do you mean by pixel?
+5) What do you mean by pixel? -->
 
 
 Click on start experiment button to start the experiment.<br>
@@ -44,10 +44,10 @@ Step 4: b). Click on next button.<br>
 Click on restart button.<br>
 <img src="images/s17.png"/><br>
 
-
+<!-- 
 **POST EXPERIMENT TASK**
 
 1) Plot a graph between 'load' versus 'displacement'.
 2) Compare the 'load' versus 'displacement' plot obtained experimentally
 and theoretically and compute the error.
-3) Compute the resolution.
+3) Compute the resolution. -->
