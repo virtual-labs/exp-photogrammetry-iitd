@@ -1,4 +1,4 @@
-### EXPERIMENTAL METHODOLOGY
+### Theory
 
 This experimental setup is shown in Fig. 1. It consists of a simply supported aluminium beam which acts as
 the structure undergoing deflections. A stationary reference frame with two marks A and B 100 mm apart is
