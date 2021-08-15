@@ -79,7 +79,8 @@ function navNext6()
         document.getElementById("canvas6").style.visibility="visible";
         
         document.getElementById("arrow_note_dwld").style.visibility="visible";
-        
+        document.getElementById("arrow_note_dwld2").style.visibility="visible";
+
         setTimeout(function()
             { 
                 document.getElementById("arrowrestart").style.visibility="visible";
@@ -152,11 +153,12 @@ function add_beam1()
         document.getElementById("beampiller1").style.visibility="hidden";
         document.getElementById("beampiller2").style.visibility="visible";
         
-        document.getElementById("addplate1").style.visibility="visible";
+        // document.getElementById("addplate1").style.visibility="visible";
 
         document.getElementById("step2c").style.visibility="hidden";
-        document.getElementById("step2d").style.visibility="visible";
+        document.getElementById("step2e").style.visibility="visible";
         document.getElementById("arrowbeam1").style.visibility="visible";
+        document.getElementById("addmarker1").style.visibility="visible";
         // document.getElementById("step2d").style.visibility="hidden";
         // document.getElementById("step2e").style.visibility="visible";
 
@@ -264,28 +266,28 @@ function takess1()
 function addscale2()
 {
     document.getElementById("addscalebtn2").style.visibility="hidden";
-    document.getElementById("scale2").style.visibility="visible";
-    document.getElementById("scale2").style.animation="scale_move1 1.5s forwards";
+    // document.getElementById("scale2").style.visibility="visible";
+    // document.getElementById("scale2").style.animation="scale_move1 1.5s forwards";
     document.getElementById("arrowbeam4").style.visibility="hidden";
 
     setTimeout(function()
             {
-                document.getElementById("bscale2").style.visibility="visible";
+                // document.getElementById("bscale2").style.visibility="visible";
                 document.getElementById("b_value2").style.visibility="visible"; 
-            },2000);
-    setTimeout(function()
-            {
-                document.getElementById("bscale2").style.visibility="hidden";
-                document.getElementById("scale2").style.animation="scale_move2 1.5s forwards"; 
+            },1000);
+    // setTimeout(function()
+    //         {
+                // document.getElementById("bscale2").style.visibility="hidden";
+                // document.getElementById("scale2").style.animation="scale_move2 1.5s forwards"; 
                 document.getElementById("scale2").src="images/scale2.png";
 
                 setTimeout(function()
                     {
                         document.getElementById("cal3").style.visibility="visible";
                         document.getElementById("cal4").style.visibility="visible";
-                        document.getElementById("cscale2").style.visibility="visible"; 
+                        // document.getElementById("cscale2").style.visibility="visible"; 
                     },2000);
-            },3000);
+            // },3000);
     setTimeout(function()
             {
                 document.getElementById("arrowcan5").style.visibility="visible";
@@ -293,7 +295,7 @@ function addscale2()
                 document.getElementById("step5a").style.visibility="hidden";
                 document.getElementById("step5b").style.visibility="visible";
                 // document.getElementById("arrowbeam1").style.visibility="visible";
-            },7000);
+            },3000);
 }
 
 
@@ -301,26 +303,25 @@ function addscale1()
 {
     document.getElementById("addscalebtn1").style.visibility="hidden";
     document.getElementById("arrowbeam2").style.visibility="hidden";
-    document.getElementById("scale1").style.visibility="visible";
-    document.getElementById("scale1").style.animation="scale_move1 1.5s forwards";
+    // document.getElementById("scale1").style.visibility="visible";
+    // document.getElementById("scale1").style.animation="scale_move1 1.5s forwards";
     setTimeout(function()
             {
-                document.getElementById("bscale1").style.visibility="visible";
+                // document.getElementById("bscale1").style.visibility="visible";
                 document.getElementById("b_value").style.visibility="visible"; 
-            },2000);
-    setTimeout(function()
-            {
-                document.getElementById("bscale1").style.visibility="hidden";
-                document.getElementById("scale1").style.animation="scale_move2 1.5s forwards"; 
-                document.getElementById("scale1").src="images/scale2.png";
+            },1000);
+    
+                // document.getElementById("bscale1").style.visibility="hidden";
+                // document.getElementById("scale1").style.animation="scale_move2 1.5s forwards"; 
+                // document.getElementById("scale1").src="images/scale2.png";
 
                 setTimeout(function()
                     {
                         document.getElementById("cal1").style.visibility="visible";
                         document.getElementById("cal2").style.visibility="visible";
-                        document.getElementById("cscale1").style.visibility="visible"; 
+                        // document.getElementById("cscale1").style.visibility="visible"; 
                     },2000);
-            },3000);
+            
     setTimeout(function()
             {
                 document.getElementById("step3a").style.visibility="hidden";
@@ -328,7 +329,7 @@ function addscale1()
                 // document.getElementById("arrowbeam1").style.visibility="visible";
                 document.getElementById("arrowcan3").style.visibility="visible";
                 document.getElementById("nextButtoncan3").style.visibility="visible";
-            },7000);
+            },3000);
 }
 
 
@@ -366,7 +367,7 @@ function moveweight()
 
 
                 
-                document.getElementById("platepiller3").style.animation="movedown1 1.2s forwards";
+                // document.getElementById("platepiller3").style.animation="movedown1 1.2s forwards";
                 document.getElementById("new_weight3").style.animation="movedown2 1.2s forwards";
                 document.getElementById("beampiller3").src="images/11.png";
 
