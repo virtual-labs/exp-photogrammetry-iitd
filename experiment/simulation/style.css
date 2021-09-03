@@ -385,13 +385,34 @@ font-size: 20px;
 
 	0% {top: 256px;}
 
-	100%{top: 259px;}
+	100%{top: 265px;}
 
 	/*% {left:95px; top:280px;}*/
 
 }
 
+@keyframes movedownplus2
 
+{
+
+	0% {top:322px;}
+
+	100%{top:330px;}
+
+	/*% {left:95px; top:280px;}*/
+
+}
+@keyframes movedowncc2
+
+{
+
+	0% {top:300px;}
+
+	100%{top:310px;}
+
+	/*% {left:95px; top:280px;}*/
+
+}
 
 
 

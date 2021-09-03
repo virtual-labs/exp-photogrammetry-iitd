@@ -86,7 +86,7 @@ function navNext6()
                 document.getElementById("arrowrestart").style.visibility="visible";
                 document.getElementById("resetbutton").style.visibility="visible";
                 document.getElementById("thanku").style.visibility="visible";
-            },4000);
+            },2000);
         
 }
 
@@ -223,7 +223,9 @@ function add_marker1()
                 setTimeout(function()
                             {
                                 document.getElementById("100_mark1").style.visibility="visible";
-                                document.getElementById("100_m1").style.visibility="visible"; 
+                                document.getElementById("861_mark1").style.visibility="visible";
+                                document.getElementById("100_m1").style.visibility="visible";
+                                document.getElementById("861_m1").style.visibility="visible"; 
                                 document.getElementById("take_ss1").style.visibility="visible";
 
 
@@ -369,6 +371,8 @@ function moveweight()
                 
                 // document.getElementById("platepiller3").style.animation="movedown1 1.2s forwards";
                 document.getElementById("new_weight3").style.animation="movedown2 1.2s forwards";
+                document.getElementById("c_mx1").style.animation="movedownplus2 1.2s forwards";
+                document.getElementById("point_mx3").style.animation="movedowncc2 1.2s forwards";
                 document.getElementById("beampiller3").src="images/11.png";
 
                 document.getElementById("take_ss2").style.visibility="visible";
