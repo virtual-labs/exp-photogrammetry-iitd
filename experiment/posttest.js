@@ -89,10 +89,12 @@
 
 
     const myQuestions = [{
-            question: "1.This is a sample question:", ///// Write the question inside double quotes
+            question: "1. Using the principle of proportioning and making use of the fact that the real distance between points _____ is 100 mm.", ///// Write the question inside double quotes
             answers: {
-                a: "This is a sample answer A", ///// Write the option 1 inside double quotes
-                b: "This is a sample answer B", ///// Write the option 2 inside double quotes
+                a: "A and B", ///// Write the option 1 inside double quotes
+                b: "C and B", ///// Write the option 2 inside double quotes
+                c: "C and A",
+                d: "None of the above",
             },
             correctAnswer: "a" ///// Write the correct option inside double quotes
         },
