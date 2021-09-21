@@ -120,6 +120,17 @@
       },
       correctAnswer: "a"    ///// Write the correct option inside double quotes
     },
+                         
+     {
+      question: "4. The reference frame _____ is attached to the beam at the mid-point.",  ///// Write the question inside double quotes
+      answers: {
+        a: "A",                  ///// Write the option 1 inside double quotes
+        b: "B",                  ///// Write the option 2 inside double quotes
+        c: "C",
+        d: "D",
+      },
+      correctAnswer: "c"    ///// Write the correct option inside double quotes
+    },                    
 
 
         
