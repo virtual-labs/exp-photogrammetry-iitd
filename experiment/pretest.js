@@ -122,14 +122,14 @@
     },
     
      {
-      question: "4. This is a sample question:",  ///// Write the question inside double quotes
+      question: "4. This virtual experiment simulates measurement of structural deflections by",  ///// Write the question inside double quotes
       answers: {
-                a: "This is a sample answer A", ///// Write the option 1 inside double quotes
-                b: "This is a sample answer B", ///// Write the option 2 inside double quotes
-                c: "This is a sample answer C",
-                d: "This is a sample answer D",
+                a: "Dynamics", ///// Write the option 1 inside double quotes
+                b: "Reference frame", ///// Write the option 2 inside double quotes
+                c: "Deflection of the beam",
+                d: "Image analysis",
             },
-      correctAnswer: "b"                ///// Write the correct option inside double quotes
+      correctAnswer: "d"                ///// Write the correct option inside double quotes
     },                     
     
      {
