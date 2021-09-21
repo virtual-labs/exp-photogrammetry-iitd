@@ -132,7 +132,16 @@
       correctAnswer: "c"    ///// Write the correct option inside double quotes
     },                    
 
-
+    {
+      question: "5. A stationary reference frame with two cross marks A and B 100 mm apart is fixed above the ?",  ///// Write the question inside double quotes
+      answers: {
+        a: "Blocks",                  ///// Write the option 1 inside double quotes
+        b: "Beam",                  ///// Write the option 2 inside double quotes
+        c: "Weight",
+        d: "Computer",
+      },
+      correctAnswer: "b"    ///// Write the correct option inside double quotes
+    },  
         
     ];
 
