@@ -107,7 +107,7 @@
         c: "Deflections",
         d: "Dynamics",
       },
-      correctAnswer: "c"    ///// Write the correct option inside double quotes
+      correctAnswer: "d"    ///// Write the correct option inside double quotes
     },
 
 
