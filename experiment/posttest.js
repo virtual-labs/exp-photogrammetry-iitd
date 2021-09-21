@@ -100,12 +100,14 @@
         },
 
     {
-      question: "<img src='images/8.PNG'><br>Identify the location of Secondary electron detector",  ///// Write the question inside double quotes
+      question: "2. The concept can be extended to structural _____ problems also by taking pictures at a very small interval",  ///// Write the question inside double quotes
       answers: {
-        a: "<img src='images/1b.png'>",                  ///// Write the option 1 inside double quotes
-        b: "<img src='images/1a.png'>",                  ///// Write the option 2 inside double quotes
-        c: "<img src='images/1c.PNG'>",      },
-      correctAnswer: "c"                ///// Write the correct option inside double quotes
+        a: "Reference",                  ///// Write the option 1 inside double quotes
+        b: "Principle",                  ///// Write the option 2 inside double quotes
+        c: "Deflections",
+        d: "Dynamics",
+      },
+      correctAnswer: "c"    ///// Write the correct option inside double quotes
     },
 
 
