@@ -100,7 +100,7 @@
         },
 
     {
-      question: "2. The concept can be extended to structural _____ problems also by taking pictures at a very small interval",  ///// Write the question inside double quotes
+      question: "2. The concept can be extended to structural _____ problems also by taking pictures at a very small interval.",  ///// Write the question inside double quotes
       answers: {
         a: "Reference",                  ///// Write the option 1 inside double quotes
         b: "Principle",                  ///// Write the option 2 inside double quotes
