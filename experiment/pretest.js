@@ -111,7 +111,7 @@
     },
 
     {
-      question: "3. The pixel count of the normal drawn from C to AB can be used to determine the vertical deflections of C in mm",  ///// Write the question inside double quotes
+      question: "3. The pixel count of the normal drawn from C to AB can be used to determine the vertical deflections of C in mm.",  ///// Write the question inside double quotes
       answers: {
                 a: "True", ///// Write the option 1 inside double quotes
                 b: "False", ///// Write the option 2 inside double quotes
