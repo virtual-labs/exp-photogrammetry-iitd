@@ -111,14 +111,14 @@
     },
 
     {
-      question: "3. This is a sample question:",  ///// Write the question inside double quotes
+      question: "3. The pixel count of the normal drawn from C to AB can be used to determine the vertical deflections of C in mm",  ///// Write the question inside double quotes
       answers: {
-                a: "This is a sample answer A", ///// Write the option 1 inside double quotes
-                b: "This is a sample answer B", ///// Write the option 2 inside double quotes
-                c: "This is a sample answer C",
-                d: "This is a sample answer D",
+                a: "True", ///// Write the option 1 inside double quotes
+                b: "False", ///// Write the option 2 inside double quotes
+//                 c: "This is a sample answer C",
+//                 d: "This is a sample answer D",
             },
-      correctAnswer: "b"                ///// Write the correct option inside double quotes
+      correctAnswer: "a"                ///// Write the correct option inside double quotes
     },
     
      {
