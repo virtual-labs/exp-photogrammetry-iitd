@@ -89,25 +89,25 @@
 
 
     const myQuestions = [{
-            question: "1. Using the principle of proportioning and making use of the fact that the real distance between points _____ is 100 mm.", ///// Write the question inside double quotes
+            question: "1. The distance between A and C is worked out using the principle of", ///// Write the question inside double quotes
             answers: {
-                a: "A and B", ///// Write the option 1 inside double quotes
-                b: "C and B", ///// Write the option 2 inside double quotes
-                c: "C and A",
+                a: "Proportioning", ///// Write the option 1 inside double quotes
+                b: "Triangulation", ///// Write the option 2 inside double quotes
+                c: "Linera algebra",
                 d: "None of the above",
             },
             correctAnswer: "a" ///// Write the correct option inside double quotes
         },
 
     {
-      question: "2. The concept can be extended to structural _____ problems also by taking pictures at a very small interval.",  ///// Write the question inside double quotes
+      question: "2. The concept can be extended to structural dynamic problems using by capturing the pictures at",  ///// Write the question inside double quotes
       answers: {
-        a: "Reference",                  ///// Write the option 1 inside double quotes
-        b: "Principle",                  ///// Write the option 2 inside double quotes
-        c: "Deflections",
-        d: "Dynamics",
+        a: "a very small interval",                  ///// Write the option 1 inside double quotes
+        b: "a very large  interval",                  ///// Write the option 2 inside double quotes
+        c: "Medium interval",
+        d: "None of the above",
       },
-      correctAnswer: "d"    ///// Write the correct option inside double quotes
+      correctAnswer: "a"    ///// Write the correct option inside double quotes
     },
                          
     {
@@ -133,14 +133,14 @@
     },                    
 
     {
-      question: "5. A stationary reference frame with two cross marks A and B 100 mm apart is fixed above the ?",  ///// Write the question inside double quotes
+      question: "5. Which are the stationary cross marks",  ///// Write the question inside double quotes
       answers: {
-        a: "Blocks",                  ///// Write the option 1 inside double quotes
-        b: "Beam",                  ///// Write the option 2 inside double quotes
-        c: "Weight",
+        a: "B",                  ///// Write the option 1 inside double quotes
+        b: "C",                  ///// Write the option 2 inside double quotes
+        c: "Both a & b",
         d: "Computer",
       },
-      correctAnswer: "b"    ///// Write the correct option inside double quotes
+      correctAnswer: "None of the above"    ///// Write the correct option inside double quotes
     },  
         
     ];
