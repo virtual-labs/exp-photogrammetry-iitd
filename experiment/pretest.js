@@ -93,25 +93,25 @@
             answers: {
                 a: "MS paint", ///// Write the option 1 inside double quotes
                 b: "MS word", ///// Write the option 2 inside double quotes
-                c: "ADOBE Photoshop",
+                c: "ADOBE photoshop",
                 d: "All of the above",
             },
             correctAnswer: "d" ///// Write the correct option inside double quotes
         },
 
-    {
-      question: "2. The pictures of the set-up cannot captured before and after the movement to determine the deflection of the beam.",  ///// Write the question inside double quotes
-      answers: {
-                a: "True", ///// Write the option 1 inside double quotes
-                b: "False", ///// Write the option 2 inside double quotes
-//                 c: "This is a sample answer C",
-//                 d: "This is a sample answer D",
-            },
-      correctAnswer: "b"                ///// Write the correct option inside double quotes
-    },
+//     {
+//       question: "2. The pictures of the set-up cannot captured before and after the movement to determine the deflection of the beam.",  ///// Write the question inside double quotes
+//       answers: {
+//                 a: "True", ///// Write the option 1 inside double quotes
+//                 b: "False", ///// Write the option 2 inside double quotes
+// //                 c: "This is a sample answer C",
+// //                 d: "This is a sample answer D",
+//             },
+//       correctAnswer: "b"                ///// Write the correct option inside double quotes
+//     },
 
     {
-      question: "3. The pixel count of the normal drawn from C to AB can be used to determine the vertical deflections of C in mm.",  ///// Write the question inside double quotes
+      question: "2. The pixel count of the normal drawn from C to AB can be used to determine the vertical deflections of C.",  ///// Write the question inside double quotes
       answers: {
                 a: "True", ///// Write the option 1 inside double quotes
                 b: "False", ///// Write the option 2 inside double quotes
@@ -122,18 +122,18 @@
     },
     
      {
-      question: "4. This virtual experiment simulates measurement of structural deflections by",  ///// Write the question inside double quotes
+      question: "3. This virtual experiment simulates measurement of structural deflections by",  ///// Write the question inside double quotes
       answers: {
-                a: "Dynamics", ///// Write the option 1 inside double quotes
-                b: "Reference frame", ///// Write the option 2 inside double quotes
-                c: "Deflection of the beam",
+                a: "Laplace analysis", ///// Write the option 1 inside double quotes
+                b: "Strain analysis", ///// Write the option 2 inside double quotes
+                c: "Fourier analysis",
                 d: "Image analysis",
             },
       correctAnswer: "d"                ///// Write the correct option inside double quotes
     },                     
     
      {
-      question: "5. The reference frame C is attached to the beam at the",  ///// Write the question inside double quotes
+      question: "4. The reference frame C is attached to the beam at the",  ///// Write the question inside double quotes
       answers: {
                 a: "First-point", ///// Write the option 1 inside double quotes
                 b: "Last-point", ///// Write the option 2 inside double quotes
