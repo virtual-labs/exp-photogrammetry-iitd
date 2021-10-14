@@ -135,8 +135,8 @@
     {
       question: "5. Which are the stationary cross marks",  ///// Write the question inside double quotes
       answers: {
-        a: "B",                  ///// Write the option 1 inside double quotes
-        b: "C",                  ///// Write the option 2 inside double quotes
+        a: "A",                  ///// Write the option 1 inside double quotes
+        b: "B",                  ///// Write the option 2 inside double quotes
         c: "Both a & b",
         d: "Computer",
       },
