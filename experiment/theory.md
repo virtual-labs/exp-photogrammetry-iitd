@@ -18,5 +18,5 @@ I = imread('filename');
 
 Imshow(I)
 
-The concept can be extended to structural dynamics problems also by taking pictures at a very small
+The concept can be extended to structural dynamics problems also by capturing pictures at a very small
 interval, say one hundredth of a second, and analyzing them using the computer.
