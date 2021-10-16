@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Beam Test</title>
+    
+
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="jquerymin.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- BEGIN BASE CSS STYLE -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet"type="text/css">
+    <link href="bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="iitstyle.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+
+        var simsubscreennum=0;
+
+        var temp=0;
+
+    </script>
+<!--Graph Online Link -->
+  <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css" rel="stylesheet" type="text/css" />
+  <link href='http://fonts.googleapis.com/css?family=Oxygen:300' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+<!--Graph Offline Link -->
+  <script src="graph_lib/chartist.min.js"></script>
+  <link href="graph_lib/chartist.min.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.ct-chart .ct-series.ct-series-a .ct-line 
+{
+  stroke: steelblue;
+  stroke-width: 4px;
+  stroke-linecap: round;
+}
+</style>
+
+
+
+
+</head>
+
+<body style="margin:0; font-family: verdana;" >
+<table align="center">
+<tr><td>
+    <div id="simscreen" style="overflow: hidden;">
+
+        <div id="title"><h3>Photogrammetry for Displacement Measurement</h3></div>
+
+
+
+         <!-- Scene 1 -->
+
+
+
+        <div class="simsubscreen" id="canvas1" ></br>
+
+<!-----<strong class="incanvas">STEP</strong>
+
+            <span class="circlebg">&nbsp;1&nbsp;</span>----->
+<div id="transwhite" style=" ">
+            <p class="incanvas" style="font-size:15px;"><strong>Objective:</strong></p>
+
+            <p class="incanvas" style="font-size:14px;">To use the photogrammetry technique to measure structural deflections. Photogrammetry technique relies on image processing to measure real-life deflections.</p></br>
+
+            <p class="incanvas" style="font-size:15px;"><strong>Apparatus used:</strong></p>
+
+            <p class="incanvas" style="font-size:14px;">Beam, Blocks, Weight, Marker</p></br>
+</div>
+            <img src="images/ssb.png" style="position:absolute; left: 60px; top: 300px; height: 180px;" title="Beam" />
+
+           
+
+            <img src="images/man.png" style="position:absolute; left: 595px; top: 100px; height: 370px;" title="Man" />
+
+            <!-- <p class="incanvas" style="font-size:18px; text-align: center; position:absolute; left:400px; top:400px;"><strong>Speciman Type<br>Beam</strong></p> -->
+
+
+            <span class="blink_me" style="position:absolute; font-size: 30px; left: 595px; top: 490px; color: ; visibility: ;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+            <input type="button" id="nextButton1" style="position:absolute; left: 625px; top: 495px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 5px; padding-bottom: 5px; color: #FFF;" value="&nbsp;Start Experiment&nbsp;" onclick="navNext1()"/>
+
+        </div>
+
+
+        <!-- Step 2 -->
+        
+        <div class="simsubscreen" id="canvas2" style="visibility:hidden;"> 
+<audio id="step1">
+        <source src="images/xcamera-beep.mp3" type="audio/mpeg">
+</audio>
+<div id="transwhite" style="height: 45px;" >
+
+            <p class="incanvas" id="step2a" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: ;"><strong>Step 1: a).</strong> Click on add button to add left block in the lab.</p><br><br>
+
+            <p class="incanvas" id="step2b" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 1: b).</strong> Click on add button to add right block in the lab.</p>
+
+            <p class="incanvas" id="step2c" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 1: c).</strong> Click on add button to add alluminium beam in the lab.</p><br><br>
+            
+            <p class="incanvas" id="step2d" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 1: d).</strong> Click on add button to add plate of beam in the lab.</p>
+            
+            <p class="incanvas" id="step2e" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 1: d).</strong> Click on add button to get marker to mark A, B, C points.</p>
+            
+            <p class="incanvas" id="step2f" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 1: e).</strong> Click on camera icon to capture screenshot.</p>
+            
+            <p class="incanvas" id="step2g" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 1: f).</strong> Click on eye icon to see the table top view for measurement.</p>
+
+
+            <input type="button" id="addl1" style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF;" value="&nbsp;Add&nbsp;" onclick="L_piller1()" >
+
+            <input type="button" id="addr1"style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF; visibility: hidden;" value="&nbsp;Add&nbsp;" onclick="R_piller2()" >
+
+            <input type="button" id="addrod1"style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF; visibility: hidden;" value="&nbsp;Add&nbsp;" onclick="add_beam1()" >
+
+            <!-- <input type="button" id="addplate1" style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF; visibility: hidden;" value="&nbsp;Add&nbsp;" onclick="add_plate1()" > -->
+
+            <input type="button" id="addmarker1" style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF; visibility: hidden;" value="&nbsp;Add&nbsp;" onclick="add_marker1()" >
+
+            <i class="fa fa-camera" id="take_ss1" style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 30px; visibility: hidden;" aria-hidden="true" onclick="takess1()" ></i>
+
+             <i class="fa fa-eye" id="nextButton3" style="color: #764C28; position:absolute;  left: 640px; top: 6px; font-size: 35px; visibility: hidden;" onclick="navNext3()"></i>
+
+            
+            <span class="blink_me" id="arrowbeam1" style="position:absolute; font-size: 30px; left:600px; top: 0px; color: ; visibility: ;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+            <span class="blink_me" id="arrowpzt1" style="position:absolute; font-size: 30px; left:600px; top:0px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+            <span class="blink_me" id="arrowbond1" style="position:absolute; font-size: 30px; left:600px; top:0px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+            <span class="blink_me" id="arrowcubox3" style="position:absolute; font-size: 30px; left:600px; top:0px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>            
+</div>
+
+        <img src="images/2h.png" id="leftpiller1" style="position: absolute; left:95px; top:280px; visibility: hidden; height: 130px">
+
+        <img src="images/2.png" id="leftpiller2" style="position: absolute; left:95px; top:280px; visibility: hidden; height: 130px">
+
+        <img src="images/3h.png" id="rightpiller1" style="position: absolute; left:95px; top:280px; visibility: hidden; height: 130px">
+
+        <img src="images/3.png" id="rightpiller2" style="position: absolute; left:582px; top:280px; visibility: hidden; height: 130px">
+
+        <img src="images/1h.png" id="beampiller1" style="position: absolute; left:575px; top:265px; visibility: hidden; height: 85px; width: 550px;"> 
+
+        <img src="images/1.png" id="beampiller2" style="position: absolute; left: 104px; top: 265px; visibility: hidden; height: 85px; width: 550px;">
+
+        <img src="images/4h.png" id="platepiller1" style="position: absolute; left: 290px; top: 265px; visibility: hidden; height: 55px"> 
+
+        <img src="images/4.png" id="platepiller2" style="position: absolute; left: 290px; top: 265px;visibility: hidden; height: 55px">
+
+        <strong id="a_m1" style="position: absolute; left:381px; top:135px; visibility: hidden;">A</strong>
+        <strong id="b_m1" style="position: absolute; left:501px; top:135px; visibility: hidden;">B</strong>
+        <strong id="c_m1" style="position: absolute; left:380px; top:322px; visibility: hidden;">C</strong>
+        <strong id="100_m1" style="position: absolute; left: 418px; top: 105px; visibility: hidden;">100 mm</strong>
+
+        <strong id="861_m1" style="position: absolute; left: 418px; top: 185px; visibility: hidden;">861 px</strong>
+
+        <strong id="1530_m1" style="position: absolute; left: 285px; top: 225px; visibility: hidden;">1530 px</strong>
+
+        <strong id="point_m1" style="position: absolute; left:378px; top:150px; font-size: 22px; visibility: hidden;">&#43;</strong>
+
+        <strong id="point_m2" style="position: absolute; left:498px; top:150px; font-size: 22px; visibility: hidden;">&#43;</strong>        
+        
+        <strong id="point_m3" style="position: absolute; left:378px; top:300px; font-size: 22px; visibility: hidden;">&#43;</strong>
+
+        <img src="images/7.png" id="100_mark1" style="position: absolute; left: 384px; top: 120px; height: 10px; width: 122px; visibility: hidden; ">
+
+        <img src="images/7.png" id="861_mark1" style="position: absolute; left: 384px; top: 200px; height: 10px; width: 122px; visibility: hidden; ">
+
+        <img src="images/7.png" id="1530_mark1" style="position: absolute; left: 268px; top: 236px; height: 13px; width: 150px; transform: rotate(90deg); visibility: hidden; ">
+
+        <img src="images/4.png" id="platepiller2" style="position: absolute; left: 290px; top: 265px;visibility: hidden; height: 55px">
+
+        <img src="images/ss1.png" id="ss1" style="position: absolute; left: 50px; top: 100px; height: 430px; visibility: hidden; animation-direction: center;">
+
+
+        <img src="images/handmarker.png" id="point_mark1" style="position: absolute; left:315px; top:270px; visibility: hidden; height: 65px">
+        
+
+        </div>
+
+
+
+
+        <!-- Step 3 -->
+        
+        <div class="simsubscreen" id="canvas3" style="visibility:hidden;"></br>
+
+<div id="transwhite" style="height: 45px;" >
+
+            <p class="incanvas" id="step3a" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: ;"><strong>Step 2: a).</strong> Click on calculate button.</p><br><br>
+
+            <p class="incanvas" id="step3b" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 2: b).</strong> Click on next button.</p>
+
+            <!-- <p class="incanvas" id="step3c" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 1: c).</strong><i class="fa fa-hand-o-right"></i> Click Add button to add PZT in the lab.</p><br><br>
+            
+            <p class="incanvas" id="step3d" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 1: d).</strong><i class="fa fa-hand-o-right"></i> Click Add button to add Bond in the lab.</p>
+            
+            <p class="incanvas" id="step2e" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 1: e).</strong><i class="fa fa-hand-o-right"></i> Click on Eye icon to see the Top View.</p> -->
+
+            <input type="button" id="addscalebtn1" style="position:absolute; left: 600px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF;" value="&nbsp;Calculate&nbsp;" onclick="addscale1()" >
+
+            <!-- <input type="button" id="addpzt1"style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF; visibility: hidden;" value="&nbsp;Add&nbsp;" onclick="addpzt1()" > -->
+
+            <!-- <input type="button" id="addbond1"style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF; visibility: hidden;" value="&nbsp;Add&nbsp;" onclick="addbond1()" > -->
+            
+             <!-- <i class="fa fa-eye" id="nextButton3" style="color: #764C28; position:absolute;  left: 640px; top: 6px; font-size: 35px; visibility: hidden;" onclick="navNext3()"></i> -->
+
+            
+            <span class="blink_me" id="arrowbeam2" style="position:absolute; font-size: 30px; left:560px; top: 0px; color: ; visibility: ;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+            <!-- <span class="blink_me" id="arrowpzt1" style="position:absolute; font-size: 30px; left:600px; top:0px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span> -->
+
+            <!-- <span class="blink_me" id="arrowbond1" style="position:absolute; font-size: 30px; left:600px; top:0px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span> -->
+
+            <!-- <span class="blink_me" id="arrow cubox3" style="position:absolute; font-size: 30px; left:600px; top:0px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>             -->
+</div>
+
+
+            <img src="images/tabletop.png" id="beam1" style="position: absolute; left: 0px; top: 100px;  visibility: ; height: 370px; width: 800px;">
+
+            <img src="images/ss1.png" id="ss1" style="position: absolute; left: 50px; top: 120px; height: 330px; visibility:  ; animation-direction: center;">
+
+            <img src="images/scale.png" id="scale1" style="position: absolute; left: 288px; top: 165px; height: 85px; visibility: hidden; animation-direction: center;">
+
+            <img src="images/bzoom1.png" id="bscale1" style="position: absolute; left: 370px; top: 240px; height: 200px; border: 2px solid red; border-radius: 150px; visibility: hidden;">
+
+            <img src="images/czoom1.png" id="cscale1" style="position: absolute; left: 370px; top: 240px; height: 200px; border: 2px solid red; border-radius: 150px; visibility: hidden;">
+
+            <img src="images/scale.png" id="scale1" style="position: absolute; left: 288px; top: 165px; height: 85px; visibility: hidden; animation-direction: center;">
+
+            <!-- <img src="images/scale2.png" id="scale2" style="position: absolute; left: 288px; top: 165px; height: 85px; visibility:   ; animation-direction: center;"> -->
+
+            <span id="type1" style="position:absolute; left: 630px; top: 115px; font-size: 22px; color: #000;"> <strong>No Weight</strong> </span>
+
+            <span id="b_value" style="position:absolute; font-size: ; left:592px; top: 245px; color: #000; visibility:  hidden;"><strong>Assuming, 861 pixels is equivalent to 100mm</strong></span>
+
+            <span id="cal1" style="position:absolute; font-size: ; left:592px; top: 335px; color: #000; visibility:  hidden;"><strong>Y1 = (100/861) x 1530;</strong></span>
+
+            <span id="cal2" style="position:absolute; font-size: ; left:592px; top: 400px; color: #000; visibility:  hidden;"><strong>Y1 = 177.70 mm</strong></span>
+            <!-- <img src="images/transbox.png" id="transbeam1" style="position: absolute;  visibility: hidden;  height: 50px; width: 400px; left:350px; top:495px;" onclick="movebeam1()"/> -->
+
+            <!-- <span class="blink_me" id="arrowtrans3" style="position:absolute; font-size: 30px; left:450px; top:450px; color: ; visibility:hidden ;"><strong><i class="fa fa-arrow-down"></i></strong></span> -->
+
+           <!-- <img src="images/pzt.png" id="pzt1" style="position: absolute; left:320px; top:400px;  visibility: hidden; height: 15px; "> -->
+
+            <!-- <img src="images/bond.png" id="bondbox1" style="position: absolute; left: 320px; top: 265px;  visibility: hidden; height: 59px; "> -->
+
+            <!-- <div id="a_size" style="position: absolute; left: 50px; top: 100px; height: 100px; width: 300px; border: 2px solid #ff6600; background-color: #FFF; visibility: hidden;"> 
+                <span style="position: absolute; left: 10px; top: 10px; font-size:  ;">Diamension of Alluminium Block</span>
+                <span style="position: absolute; left: 10px; top: 30px; font-size: ;">L = 10 mm</span>
+                <span style="position: absolute; left: 10px; top: 50px; font-size: ;">B = 48 mm</span>
+                <span style="position: absolute; left: 10px; top: 70px; font-size: ;">H = </span>
+            </div>-->
+
+            <!-- <div id="p_size" style="position: absolute; left: 450px; top: 100px; height: 100px; width: 300px; border: 2px solid #ff6600; background-color: #FFF; visibility: hidden;">
+                <span style="position: absolute; left: 10px; top: 10px; font-size:  ;">Diamension of PZT</span>
+                <span style="position: absolute; left: 10px; top: 30px; font-size: ;">L = 10 mm</span>
+                <span style="position: absolute; left: 10px; top: 50px; font-size: ;">B = 10 mm</span>
+                <span style="position: absolute; left: 10px; top: 70px; font-size: ;">H = 0.3 mm</span>
+            </div> -->
+            <!--Blinking arrowcubox       -->
+            <span class="blink_me" id="arrowcan3" style="position:absolute; font-size: 30px; left: 710px; top: 510px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+             <i class="fa fa-hand-o-right" id="nextButtoncan3" style="color: #764C28; position:absolute; left: 750px; top: 510px; font-size: 35px; visibility: hidden;" onclick="navNext4()"></i>   
+
+            <!---img style="position:absolute; left:10px; top:480px; cursor:pointer;" id="backButton3" onClick="navBack3()" src="Back.png" /--->
+
+
+        </div>
+
+
+
+        <!-- Step 4 -->
+
+
+
+        <div class="simsubscreen" id="canvas4" style="visibility: hidden;">
+ <audio id="step1">
+        <source src="images/xcamera-beep.mp3" type="audio/mpeg">
+</audio>
+<div id="transwhite" style="height: 45px;" >
+
+            <p class="incanvas" id="step4a" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: ;"><strong>Step 3: a).</strong> Click on add button to add weight in the lab.</p><br><br>
+
+            <p class="incanvas" id="step4b" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 3: b).</strong> Click on weight to arrange it on the weight plate.</p>
+
+            <p class="incanvas" id="step4c" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 3: c).</strong> Click on camera icon to capture screenshot.</p><br><br>
+            
+            <p class="incanvas" id="step4d" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 3: d).</strong> Click on eye icon to see the table top view for measurement.</p> 
+
+            <input type="button" id="addweight111" style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF;" value="&nbsp;Add&nbsp;" onclick="addweight1()" >
+
+            <!-- <input type="button" id="addr1" style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF; visibility: hidden;" value="&nbsp;Add&nbsp;" onclick="R_piller2()" > -->
+
+            <!-- <input type="button" id="addrod1"style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF; visibility: hidden;" value="&nbsp;Add&nbsp;" onclick="add_beam1()" > -->
+
+            <!-- <input type="button" id="addplate1" style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF; visibility: hidden;" value="&nbsp;Add&nbsp;" onclick="add_plate1()" > -->
+
+            <!-- <input type="button" id="addmarker1" style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF; visibility: hidden;" value="&nbsp;Add&nbsp;" onclick="add_marker1()" > -->
+
+            <i class="fa fa-camera" id="take_ss2" style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 30px; visibility: hidden;" aria-hidden="true" onclick="takess2()" ></i>
+
+             <i class="fa fa-eye" id="nextButton4" style="color: #764C28; position:absolute;  left: 640px; top: 6px; font-size: 35px; visibility: hidden;" onclick="navNext5()"></i>
+
+            
+            <span class="blink_me" id="arrowbeam3" style="position:absolute; font-size: 30px; left:600px; top: 0px; color: ; visibility: ;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+            <span class="blink_me" id="arrowweight1" style="position:absolute; font-size: 30px; left:600px; top:370px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-down"></i></strong></span>
+
+            <span class="blink_me" id="arrowbond1" style="position:absolute; font-size: 30px; left:600px; top:0px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+            <span class="blink_me" id="arrowcubox3" style="position:absolute; font-size: 30px; left:600px; top:0px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>            
+</div>
+
+        
+        <img src="images/2.png" style="position: absolute; left:95px; top:280px; visibility:  ; height: 130px">
+
+        <img src="images/3.png" style="position: absolute; left:582px; top:280px; visibility:  ; height: 130px">
+
+        <img src="images/1.png" id="beampiller3" style="position: absolute; left: 104px; top: 265px; visibility:  ; height: 85px; width: 550px;">
+
+        <!-- <img src="images/4.png" id="platepiller3" style="position: absolute; left: 290px; top: 265px;visibility:  ; height: 55px"> -->
+
+        <strong id="a_m1" style="position: absolute; left:381px; top:135px; visibility:  ;">A</strong>
+        <strong id="b_m1" style="position: absolute; left:501px; top:135px; visibility:  ;">B</strong>
+        <strong id="c_mx1" style="position: absolute; left:380px; top:322px; visibility:  ;">C</strong>
+        <strong id="100_m1" style="position: absolute; left: 418px; top: 105px; visibility:  ;">100 mm</strong>
+
+        <strong id="861_m2" style="position: absolute; left: 418px; top: 185px; visibility: ;">861 px</strong>
+
+        <strong id="point_m1" style="position: absolute; left:378px; top:150px; font-size: 22px; visibility:  ;">&#43;</strong>
+
+        <strong id="point_m2" style="position: absolute; left:498px; top:150px; font-size: 22px; visibility:  ;">&#43;</strong>        
+        
+        <strong id="point_mx3" style="position: absolute; left:378px; top:300px; font-size: 22px; visibility:  ;">&#43;</strong>
+
+        <img src="images/7.png" id=" " style="position: absolute; left: 384px; top: 200px; height: 10px; width: 122px; visibility: ; ">
+
+        <img src="images/7.png" id="100_mark1" style="position: absolute; left: 384px; top: 120px; height: 10px; width: 122px; visibility:  ; ">
+ 
+
+        <img src="images/8h.png" id="new_weight1" style="position: absolute; left: 340px; top: 256px; height: 52px; visibility: hidden;">
+
+        <img src="images/8.png" id="new_weight3" style="position: absolute; left: 340px; top: 256px; height: 52px; visibility: hidden;">
+
+        <img src="images/8.png" id="new_weight2" style="position: absolute; left: 620px; top: 445px; height: 52px; visibility: hidden;">
+
+
+        <strong id="1544_m1" style="position: absolute; left: 285px; top: 225px; visibility: hidden;">1544 px</strong>
+
+        <img src="images/7.png" id="1544_mark1" style="position: absolute; left: 266px; top: 241px; height: 11px; width: 165px; transform: rotate(90deg); visibility: hidden; ">
+
+        <img src="images/ss2.png" id="ss2" style="position: absolute; left: 50px; top: 100px; height: 430px; visibility: hidden; animation-direction: center;">
+
+        <img src="images/transbox.png" id="new_weighttb1" style="position: absolute; left: 610px; top: 435px; height: 72px; width: 100px; visibility: hidden;" onclick="moveweight()">
+
+        
+
+        </div>
+
+
+
+        
+
+ 
+
+        <!-- Step 5 -->
+
+
+
+        <div class="simsubscreen" id="canvas5" style="visibility:hidden;"></br>
+
+<div id="transwhite" style="height: 45px;" >
+
+            <p class="incanvas" id="step5a" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: ;"><strong>Step 4: a).</strong> Click on calculate button.</p><br><br>
+
+            <p class="incanvas" id="step5b" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 4: b).</strong> Click on next button.</p>
+
+            <input type="button" id="addscalebtn2" style="position:absolute; left: 600px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF;" value="&nbsp;Calculate&nbsp;" onclick="addscale2()" >
+
+            <input type="button" id="addpzt1"style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF; visibility: hidden;" value="&nbsp;Add&nbsp;" onclick="addpzt1()" >
+
+            <input type="button" id="addbond1"style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF; visibility: hidden;" value="&nbsp;Add&nbsp;" onclick="addbond1()" >
+            
+             <!-- <i class="fa fa-eye" id="nextButton3" style="color: #764C28; position:absolute;  left: 640px; top: 6px; font-size: 35px; visibility: hidden;" onclick="navNext3()"></i> -->
+
+            
+            <span class="blink_me" id="arrowbeam4" style="position:absolute; font-size: 30px; left:560px; top: 0px; color: ; visibility: ;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+            <span class="blink_me" id="arrowpzt1" style="position:absolute; font-size: 30px; left:600px; top:0px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+            <span class="blink_me" id="arrowbond1" style="position:absolute; font-size: 30px; left:600px; top:0px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+            <!-- <span class="blink_me" id="arrow cubox3" style="position:absolute; font-size: 30px; left:600px; top:0px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>             -->
+</div>
+
+
+            <img src="images/tabletop.png" id="beam1" style="position: absolute; left: 0px; top: 100px;  visibility: ; height: 370px; width: 800px;">
+
+            <img src="images/ss2.png" id="ss2" style="position: absolute; left: 50px; top: 120px; height: 330px; visibility:  ; animation-direction: center;">
+
+            <img src="images/scale.png" id="scale2" style="position: absolute; left: 288px; top: 165px; height: 85px; visibility: hidden; animation-direction: center;">
+
+            <img src="images/bzoom1.png" id="bscale2" style="position: absolute; left: 370px; top: 240px; height: 200px; border: 2px solid red; border-radius: 150px; visibility: hidden;">
+
+            <img src="images/czoom2.png" id="cscale2" style="position: absolute; left: 370px; top: 240px; height: 200px; border: 2px solid red; border-radius: 150px; visibility: hidden;">
+
+            <img src="images/scale.png" id="scale1" style="position: absolute; left: 288px; top: 165px; height: 85px; visibility: hidden; animation-direction: center;">
+
+            <!-- <img src="images/scale2.png" id="scale2" style="position: absolute; left: 288px; top: 165px; height: 85px; visibility:   ; animation-direction: center;"> -->
+
+            <span id="type1" style="position:absolute; left: 630px; top: 115px; font-size: 22px; color: #000;"> <strong>P = 0.43N</strong> </span>
+
+            <span id="b_value2" style="position:absolute; font-size: ; left:592px; top: 245px; color: #000; visibility:  hidden;"><strong>Assuming, 861 pixels is equivalent to 100mm</strong></span>
+
+            <span id="cal3" style="position:absolute; font-size: ; left:592px; top: 335px; color: #000; visibility:  hidden;"><strong>Y2 = (100/861) x 1544;</strong></span>
+
+            <span id="cal4" style="position:absolute; font-size: ; left:592px; top: 400px; color: #000; visibility:  hidden;"><strong>Y2 = 179.326 mm</strong></span>
+            <!-- <img src="images/transbox.png" id="transbeam1" style="position: absolute;  visibility: hidden;  height: 50px; width: 400px; left:350px; top:495px;" onclick="movebeam1()"/> -->
+
+            <!-- <span class="blink_me" id="arrowtrans3" style="position:absolute; font-size: 30px; left:450px; top:450px; color: ; visibility:hidden ;"><strong><i class="fa fa-arrow-down"></i></strong></span> -->
+
+           <!-- <img src="images/pzt.png" id="pzt1" style="position: absolute; left:320px; top:400px;  visibility: hidden; height: 15px; "> -->
+
+            <!-- <img src="images/bond.png" id="bondbox1" style="position: absolute; left: 320px; top: 265px;  visibility: hidden; height: 59px; "> -->
+
+            <!-- <div id="a_size" style="position: absolute; left: 50px; top: 100px; height: 100px; width: 300px; border: 2px solid #ff6600; background-color: #FFF; visibility: hidden;"> 
+                <span style="position: absolute; left: 10px; top: 10px; font-size:  ;">Diamension of Alluminium Block</span>
+                <span style="position: absolute; left: 10px; top: 30px; font-size: ;">L = 10 mm</span>
+                <span style="position: absolute; left: 10px; top: 50px; font-size: ;">B = 48 mm</span>
+                <span style="position: absolute; left: 10px; top: 70px; font-size: ;">H = </span>
+            </div>-->
+
+            <!-- <div id="p_size" style="position: absolute; left: 450px; top: 100px; height: 100px; width: 300px; border: 2px solid #ff6600; background-color: #FFF; visibility: hidden;">
+                <span style="position: absolute; left: 10px; top: 10px; font-size:  ;">Diamension of PZT</span>
+                <span style="position: absolute; left: 10px; top: 30px; font-size: ;">L = 10 mm</span>
+                <span style="position: absolute; left: 10px; top: 50px; font-size: ;">B = 10 mm</span>
+                <span style="position: absolute; left: 10px; top: 70px; font-size: ;">H = 0.3 mm</span>
+            </div> -->
+            <!--Blinking arrowcubox       -->
+            <span class="blink_me" id="arrowcan5" style="position:absolute; font-size: 30px; left: 710px; top: 510px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+             <i class="fa fa-hand-o-right" id="nextButtoncan5" style="color: #764C28; position:absolute; left: 750px; top: 510px; font-size: 35px; visibility: hidden;" onclick="navNext6()"></i>   
+
+            <!---img style="position:absolute; left:10px; top:480px; cursor:pointer;" id="backButton3" onClick="navBack3()" src="Back.png" /--->
+
+            
+</div>
+            <!---<img src="images/Next.png"/>
+               
+
+            img style="position:absolute; left:10px; top:480px; cursor:pointer;" id="backButton2" onClick="navBack2()" src="Back.png" /--->
+
+        
+
+ <div class="simsubscreen" id="canvas6" style="visibility:hidden;"></br>
+
+<div id="transwhite1" style="height: 549px;" >
+
+             
+</div>
+             
+
+            <img src="images/ss1.png"style="position: absolute; left: 5px; top: 35px; visibility:  ; height: 295px; width: 393px; border: 1px dashed #000;"> 
+            <img src="images/ss2.png"style="position: absolute; left: 400px; top: 35px; visibility:  ; height: 295px; width: 393px; border: 1px dashed #000;">
+
+<!-- <img src="images/linedraw.png"style="position: absolute; left: 450px; top: 365px; visibility:  ; height: 160px; "> 
+
+<span style="position:absolute; left: 425px; top: 435px; color: #000;"> <strong>Y1</strong> </span>
+
+<span style="position:absolute; left: 560px; top: 435px; color: #000;"> <strong>Y2</strong> </span>
+
+<span style="position:absolute; left: 465px; top: 385px; color: #000;"> <strong>861</strong> </span>
+
+<span style="position:absolute; left: 595px; top: 385px; color: #000;"> <strong>861</strong> </span>
+
+
+<img src="images/linedraw.png"style="position: absolute; left: 580px; top: 365px; visibility:  ; height: 160px; ">
+-->
+
+
+<!--
+            <span id="type1" style="position:absolute; left: 40px;
+    top: 335px;
+     font-size: 20px; color: #000;"> <strong>No Weight</strong> </span> 
+
+             <span id="b_value" style="position:absolute; font-size: ; left:30px; top: 375px; color: #000; visibility: ;"><strong>Assuming, 861 pixels is equivalent to 100mm</strong></span> 
+
+            <span id="cal1" style="position:absolute; font-size: ; left:30px; top: 405px; color: #000; visibility: ;"><strong>Y1 = (100/861) x 1530;</strong></span>
+
+            
+
+
+            <span id="type1" style="position:absolute; left: 460px; top: 335px; font-size: 20px; color: #000;"> <strong>P = 0.43N</strong> </span>
+
+            
+
+            <span id="cal3" style="position:absolute; font-size: ; left:30px; top: 435px; color: #000; visibility: ;"><strong>Y2 = (100/861) x 1544;</strong></span>
+
+            <span id="cal2" style="position:absolute; font-size: ; left: 200px; top: 405px; color: #000; visibility: ; color: red;"><strong >Y1 = 177.70 mm</strong></span>
+
+            <span id="cal4" style="position:absolute; font-size: ; left: 200px; top: 435px; color: #000; visibility: ; color: red;"><strong >Y2 = 179.326 mm</strong></span>
+-->
+            <span id="b_value2" style="position:absolute; font-size: ; left:30px; top: 400px; color: #000; visibility: ;"><strong>Deflection, &#8710;Y = Y2 - Y1</strong></span>
+
+            <span id="cal4" style="position:absolute; font-size: ; left: 200px; top: 400px; color: #000; visibility: ; color: red;"><strong >&#8710;Y = 1.626 mm</strong></span>
+
+
+            <!--Blinking arrowcubox  -->
+            <span class="blink_me" id="arrowcubox6" style="position:absolute;visibility: hidden; font-size: 30px; left: 715px; top: 505px; color: ; "><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+             <i class="fa fa-hand-o-right" id="nextButton6" style="color: #764C28; position:absolute;visibility:  hidden; left: 750px; top: 510px; font-size: 35px; " onclick="navNext6()"></i>
+
+             <p class="incanvas" id="thanku" style="font-size:15px;position: absolute; visibility: hidden; left: 110px; top: 510px;">Thank You for performing Experiment, to repeat experiment click Restart button. </p>
+
+            <div id=""  style=" position: absolute; left: 30px; top: 455px; text-align: center; font-weight: bold; color: black; visibility: ;">If you want to perform experiment in real trigger mode <a class="blink_me" style="color: red; font-size: 20px;" href="http://ssdl.iitd.ac.in/vssdl/exp4.html" target="_blank">Click here</a></div>
+	
+</div>  
+
+<!-- step 6a -->
+        <div class="simsubscreen" id="canvas6a" style="visibility:hidden;"> 
+
+<div id="transwhite" style="height: 320px;">
+
+            <!-- <span id="step6a" style="position:absolute; left:73px; top:80px;"><i class="fa fa-hand-o-right"></i> a) Click on Add button to bring pillers in the lab. </span> -->
+
+            <img src="images/beam.png" id="beam1" style="position: absolute; left: 200px; top: 230px;  visibility: hidden; height: 59px; width: 300px;">
+            <img src="images/front_bond.png" id="beam1" style="position: absolute; left: 300px; top: 240px; visibility: hidden; height: 15px; width: 120px;">
+            <img src="images/front_pzt.png" id="beam1" style="position: absolute;left: 300px; top: 227px; visibility: hidden; height: 22px; width: 116px;">
+ 
+            <img src="images/beam.png" id="eff1" style="position: absolute; left: 55px;top: 110px;visibility: ;height: 170px;width: 590px; ">
+            <img src="images/front_bond.png" id="eff2" style="position: absolute; left: 250px; top: 146px; visibility: ; height: 35px; width: 221px; ">
+            <img src="images/front_pzt.png" id="eff3" style="position: absolute; left: 250px;top: 114px;visibility: ;height: 54px;width: 214px; ">
+
+</div>
+
+<span id="name1" style="position: absolute; left: 130px; top: 425px; font-size: 14px;"> Download Data for Perfect Bonding</span>             
+
+<span id="name1" style="position: absolute; left: 445px; top: 425px; font-size: 14px;"> Download Data for Adhesive Bonding</span>
+
+<a href="images/sle_exp_perf.xlsx">           
+<input type="button" style="position:absolute; left: 200px; top: 460px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF; visibility: ;" value="&nbsp;Download&nbsp;"   >
+</a>
+
+<a href="images/sle_exp_bond.xlsx">
+<input type="button" style="position:absolute; left: 500px; top: 460px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF; visibility: ;" value="&nbsp;Download&nbsp;"   >
+</a>       
+            <!--Blinking arrowcubox  -->
+            <span class="blink_me" id="arrowcubox6a" style="position:absolute; font-size: 30px; left: 710px; top: 510px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+            <i class="fa fa-hand-o-right" id="nextButton6a" style="color: #764C28; position:absolute; left: 750px; top: 510px; font-size: 35px; visibility: hidden;" onclick="navNext6a()"></i>  
+
+<a href="images/nw.png" download>
+	<button id="arrow_note_dwld" style="position: absolute; left: 120px; top: 350px; height: 25px; width: 175px;  background-color: steelblue;color: white; visibility: hidden;">Download actual picture</button>
+</a>
+<a href="images/ww.png" download>
+	<button id="arrow_note_dwld2" style="position: absolute; left: 520px; top: 350px; height: 25px; width: 175px;  background-color: steelblue;color: white; visibility: hidden;">Download actual picture</button>
+</a>
+           
+            <!--Blinking arrowcubox  -->
+            <span class="blink_me" id="arrowrestart" style="position:absolute; font-size: 30px; left: 664px; top: 511px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+            <input type="reset" id="resetbutton" style="position:absolute; left: 705px; top: 513px; cursor:pointer; font-size: 15px; visibility: hidden; background-color: #764C28; padding-top: 5px; color: #FFF; padding-bottom: 5px;" value="&nbsp;Restart&nbsp;" onclick="reset()"/>
+
+
+        </div>
+
+
+    </div><!--- First Div---->
+
+</td></tr>
+</table>
+
+</body>
+</html>
