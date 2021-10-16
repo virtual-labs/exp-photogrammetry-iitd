@@ -224,8 +224,10 @@ function add_marker1()
                             {
                                 document.getElementById("100_mark1").style.visibility="visible";
                                 document.getElementById("861_mark1").style.visibility="visible";
+                                document.getElementById("1530_mark1").style.visibility="visible";
                                 document.getElementById("100_m1").style.visibility="visible";
-                                document.getElementById("861_m1").style.visibility="visible"; 
+                                document.getElementById("861_m1").style.visibility="visible";
+                                document.getElementById("1530_m1").style.visibility="visible";  
                                 document.getElementById("take_ss1").style.visibility="visible";
 
 
@@ -374,6 +376,12 @@ function moveweight()
                 document.getElementById("c_mx1").style.animation="movedownplus2 1.2s forwards";
                 document.getElementById("point_mx3").style.animation="movedowncc2 1.2s forwards";
                 document.getElementById("beampiller3").src="images/11.png";
+                
+                setTimeout(function()
+            	{
+				document.getElementById("1544_mark1").style.visibility="visible";
+				document.getElementById("1544_m1").style.visibility="visible";
+				},1600);
 
                 document.getElementById("take_ss2").style.visibility="visible";
                 document.getElementById("arrowbeam3").style.visibility="visible";
