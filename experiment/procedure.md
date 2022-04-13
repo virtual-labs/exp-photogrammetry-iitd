@@ -12,7 +12,7 @@
 
 1. Click on start experiment button to start the experiment.
 
-<im g src="images/pr1.png"/>
+<img src="images/pr1.png"/>
 
 Step 1: a). Click on add button to add left block in the lab.
 
