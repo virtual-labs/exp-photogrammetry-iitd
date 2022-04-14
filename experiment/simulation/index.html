@@ -76,11 +76,11 @@
 <div id="transwhite" style=" ">
             <p class="incanvas" style="font-size:15px;"><strong>Objective:</strong></p>
 
-            <p class="incanvas" style="font-size:14px;">To use the photogrammetry technique to determine structural deflections. Photogrammetry technique relies on image processing to measure real-life movements.</p></br>
+            <p class="incanvas" style="font-size:14px;">To use the photogrammetry technique to measure structural deflections. Photogrammetry technique relies on image processing to measure real-life deflections.</p></br>
 
             <p class="incanvas" style="font-size:15px;"><strong>Apparatus used:</strong></p>
 
-            <p class="incanvas" style="font-size:14px;">Beam, Blocks, Weight, Scale, Marker</p></br>
+            <p class="incanvas" style="font-size:14px;">Beam, Blocks, Weight, Marker</p></br>
 </div>
             <img src="images/ssb.png" style="position:absolute; left: 60px; top: 300px; height: 180px;" title="Beam" />
 
@@ -114,11 +114,11 @@
             
             <p class="incanvas" id="step2d" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 1: d).</strong> Click on add button to add plate of beam in the lab.</p>
             
-            <p class="incanvas" id="step2e" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 1: e).</strong> Click on add button to get marker to mark A, B, C points.</p>
+            <p class="incanvas" id="step2e" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 1: d).</strong> Click on add button to get marker to mark A, B, C points.</p>
             
-            <p class="incanvas" id="step2f" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 1: f).</strong> Click on camera icon to take screenshot.</p>
+            <p class="incanvas" id="step2f" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 1: e).</strong> Click on camera icon to capture screenshot.</p>
             
-            <p class="incanvas" id="step2g" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 1: g).</strong> Click on eye icon to see the table top view for measurement.</p>
+            <p class="incanvas" id="step2g" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 1: f).</strong> Click on eye icon to see the table top view for measurement.</p>
 
 
             <input type="button" id="addl1" style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF;" value="&nbsp;Add&nbsp;" onclick="L_piller1()" >
@@ -127,7 +127,7 @@
 
             <input type="button" id="addrod1"style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF; visibility: hidden;" value="&nbsp;Add&nbsp;" onclick="add_beam1()" >
 
-            <input type="button" id="addplate1" style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF; visibility: hidden;" value="&nbsp;Add&nbsp;" onclick="add_plate1()" >
+            <!-- <input type="button" id="addplate1" style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF; visibility: hidden;" value="&nbsp;Add&nbsp;" onclick="add_plate1()" > -->
 
             <input type="button" id="addmarker1" style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF; visibility: hidden;" value="&nbsp;Add&nbsp;" onclick="add_marker1()" >
 
@@ -165,6 +165,11 @@
         <strong id="b_m1" style="position: absolute; left:501px; top:135px; visibility: hidden;">B</strong>
         <strong id="c_m1" style="position: absolute; left:380px; top:322px; visibility: hidden;">C</strong>
         <strong id="100_m1" style="position: absolute; left: 418px; top: 105px; visibility: hidden;">100 mm</strong>
+
+        <strong id="861_m1" style="position: absolute; left: 418px; top: 185px; visibility: hidden;">861 px</strong>
+
+        <strong id="1530_m1" style="position: absolute; left: 285px; top: 225px; visibility: hidden;">1530 px</strong>
+
         <strong id="point_m1" style="position: absolute; left:378px; top:150px; font-size: 22px; visibility: hidden;">&#43;</strong>
 
         <strong id="point_m2" style="position: absolute; left:498px; top:150px; font-size: 22px; visibility: hidden;">&#43;</strong>        
@@ -172,6 +177,10 @@
         <strong id="point_m3" style="position: absolute; left:378px; top:300px; font-size: 22px; visibility: hidden;">&#43;</strong>
 
         <img src="images/7.png" id="100_mark1" style="position: absolute; left: 384px; top: 120px; height: 10px; width: 122px; visibility: hidden; ">
+
+        <img src="images/7.png" id="861_mark1" style="position: absolute; left: 384px; top: 200px; height: 10px; width: 122px; visibility: hidden; ">
+
+        <img src="images/7.png" id="1530_mark1" style="position: absolute; left: 268px; top: 236px; height: 13px; width: 150px; transform: rotate(90deg); visibility: hidden; ">
 
         <img src="images/4.png" id="platepiller2" style="position: absolute; left: 290px; top: 265px;visibility: hidden; height: 55px">
 
@@ -192,7 +201,7 @@
 
 <div id="transwhite" style="height: 45px;" >
 
-            <p class="incanvas" id="step3a" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: ;"><strong>Step 2: a).</strong> Click on add button to add scale for measure the length.</p><br><br>
+            <p class="incanvas" id="step3a" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: ;"><strong>Step 2: a).</strong> Click on calculate button.</p><br><br>
 
             <p class="incanvas" id="step3b" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 2: b).</strong> Click on next button.</p>
 
@@ -202,7 +211,7 @@
             
             <p class="incanvas" id="step2e" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 1: e).</strong><i class="fa fa-hand-o-right"></i> Click on Eye icon to see the Top View.</p> -->
 
-            <input type="button" id="addscalebtn1" style="position:absolute; left: 630px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF;" value="&nbsp;Add&nbsp;" onclick="addscale1()" >
+            <input type="button" id="addscalebtn1" style="position:absolute; left: 600px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF;" value="&nbsp;Calculate&nbsp;" onclick="addscale1()" >
 
             <!-- <input type="button" id="addpzt1"style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF; visibility: hidden;" value="&nbsp;Add&nbsp;" onclick="addpzt1()" > -->
 
@@ -211,7 +220,7 @@
              <!-- <i class="fa fa-eye" id="nextButton3" style="color: #764C28; position:absolute;  left: 640px; top: 6px; font-size: 35px; visibility: hidden;" onclick="navNext3()"></i> -->
 
             
-            <span class="blink_me" id="arrowbeam2" style="position:absolute; font-size: 30px; left:600px; top: 0px; color: ; visibility: ;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+            <span class="blink_me" id="arrowbeam2" style="position:absolute; font-size: 30px; left:560px; top: 0px; color: ; visibility: ;"><strong><i class="fa fa-arrow-right"></i></strong></span>
 
             <!-- <span class="blink_me" id="arrowpzt1" style="position:absolute; font-size: 30px; left:600px; top:0px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span> -->
 
@@ -237,9 +246,9 @@
 
             <span id="type1" style="position:absolute; left: 630px; top: 115px; font-size: 22px; color: #000;"> <strong>No Weight</strong> </span>
 
-            <span id="b_value" style="position:absolute; font-size: ; left:592px; top: 245px; color: #000; visibility:  hidden;"><strong>Assuming, 8.61 units is equivalent to 100mm</strong></span>
+            <span id="b_value" style="position:absolute; font-size: ; left:592px; top: 245px; color: #000; visibility:  hidden;"><strong>Assuming, 861 pixels is equivalent to 100mm</strong></span>
 
-            <span id="cal1" style="position:absolute; font-size: ; left:592px; top: 335px; color: #000; visibility:  hidden;"><strong>Y1 = (100/8.61) x 15.30;</strong></span>
+            <span id="cal1" style="position:absolute; font-size: ; left:592px; top: 335px; color: #000; visibility:  hidden;"><strong>Y1 = (100/861) x 1530;</strong></span>
 
             <span id="cal2" style="position:absolute; font-size: ; left:592px; top: 400px; color: #000; visibility:  hidden;"><strong>Y1 = 177.70 mm</strong></span>
             <!-- <img src="images/transbox.png" id="transbeam1" style="position: absolute;  visibility: hidden;  height: 50px; width: 400px; left:350px; top:495px;" onclick="movebeam1()"/> -->
@@ -289,7 +298,7 @@
 
             <p class="incanvas" id="step4b" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 3: b).</strong> Click on weight to arrange it on the weight plate.</p>
 
-            <p class="incanvas" id="step4c" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 3: c).</strong> Click on camera icon to take screenshot.</p><br><br>
+            <p class="incanvas" id="step4c" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 3: c).</strong> Click on camera icon to capture screenshot.</p><br><br>
             
             <p class="incanvas" id="step4d" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 3: d).</strong> Click on eye icon to see the table top view for measurement.</p> 
 
@@ -324,17 +333,22 @@
 
         <img src="images/1.png" id="beampiller3" style="position: absolute; left: 104px; top: 265px; visibility:  ; height: 85px; width: 550px;">
 
-        <img src="images/4.png" id="platepiller3" style="position: absolute; left: 290px; top: 265px;visibility:  ; height: 55px">
+        <!-- <img src="images/4.png" id="platepiller3" style="position: absolute; left: 290px; top: 265px;visibility:  ; height: 55px"> -->
 
         <strong id="a_m1" style="position: absolute; left:381px; top:135px; visibility:  ;">A</strong>
         <strong id="b_m1" style="position: absolute; left:501px; top:135px; visibility:  ;">B</strong>
-        <strong id="c_m1" style="position: absolute; left:380px; top:322px; visibility:  ;">C</strong>
+        <strong id="c_mx1" style="position: absolute; left:380px; top:322px; visibility:  ;">C</strong>
         <strong id="100_m1" style="position: absolute; left: 418px; top: 105px; visibility:  ;">100 mm</strong>
+
+        <strong id="861_m2" style="position: absolute; left: 418px; top: 185px; visibility: ;">861 px</strong>
+
         <strong id="point_m1" style="position: absolute; left:378px; top:150px; font-size: 22px; visibility:  ;">&#43;</strong>
 
         <strong id="point_m2" style="position: absolute; left:498px; top:150px; font-size: 22px; visibility:  ;">&#43;</strong>        
         
-        <strong id="point_m3" style="position: absolute; left:378px; top:300px; font-size: 22px; visibility:  ;">&#43;</strong>
+        <strong id="point_mx3" style="position: absolute; left:378px; top:300px; font-size: 22px; visibility:  ;">&#43;</strong>
+
+        <img src="images/7.png" id=" " style="position: absolute; left: 384px; top: 200px; height: 10px; width: 122px; visibility: ; ">
 
         <img src="images/7.png" id="100_mark1" style="position: absolute; left: 384px; top: 120px; height: 10px; width: 122px; visibility:  ; ">
  
@@ -344,6 +358,11 @@
         <img src="images/8.png" id="new_weight3" style="position: absolute; left: 340px; top: 256px; height: 52px; visibility: hidden;">
 
         <img src="images/8.png" id="new_weight2" style="position: absolute; left: 620px; top: 445px; height: 52px; visibility: hidden;">
+
+
+        <strong id="1544_m1" style="position: absolute; left: 285px; top: 225px; visibility: hidden;">1544 px</strong>
+
+        <img src="images/7.png" id="1544_mark1" style="position: absolute; left: 266px; top: 241px; height: 11px; width: 165px; transform: rotate(90deg); visibility: hidden; ">
 
         <img src="images/ss2.png" id="ss2" style="position: absolute; left: 50px; top: 100px; height: 430px; visibility: hidden; animation-direction: center;">
 
@@ -367,11 +386,11 @@
 
 <div id="transwhite" style="height: 45px;" >
 
-            <p class="incanvas" id="step5a" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: ;"><strong>Step 4: a).</strong> Click on add button to add scale for measure the length.</p><br><br>
+            <p class="incanvas" id="step5a" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: ;"><strong>Step 4: a).</strong> Click on calculate button.</p><br><br>
 
             <p class="incanvas" id="step5b" style="font-size:14px; position: absolute; left: 0px; top: 5px; visibility: hidden;"><strong>Step 4: b).</strong> Click on next button.</p>
 
-            <input type="button" id="addscalebtn2" style="position:absolute; left: 630px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF;" value="&nbsp;Add&nbsp;" onclick="addscale2()" >
+            <input type="button" id="addscalebtn2" style="position:absolute; left: 600px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF;" value="&nbsp;Calculate&nbsp;" onclick="addscale2()" >
 
             <input type="button" id="addpzt1"style="position:absolute; left: 640px; top: 6px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 1px; padding-bottom: 3px; color: #FFF; visibility: hidden;" value="&nbsp;Add&nbsp;" onclick="addpzt1()" >
 
@@ -380,7 +399,7 @@
              <!-- <i class="fa fa-eye" id="nextButton3" style="color: #764C28; position:absolute;  left: 640px; top: 6px; font-size: 35px; visibility: hidden;" onclick="navNext3()"></i> -->
 
             
-            <span class="blink_me" id="arrowbeam4" style="position:absolute; font-size: 30px; left:600px; top: 0px; color: ; visibility: ;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+            <span class="blink_me" id="arrowbeam4" style="position:absolute; font-size: 30px; left:560px; top: 0px; color: ; visibility: ;"><strong><i class="fa fa-arrow-right"></i></strong></span>
 
             <span class="blink_me" id="arrowpzt1" style="position:absolute; font-size: 30px; left:600px; top:0px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
 
@@ -406,11 +425,11 @@
 
             <span id="type1" style="position:absolute; left: 630px; top: 115px; font-size: 22px; color: #000;"> <strong>P = 0.43N</strong> </span>
 
-            <span id="b_value2" style="position:absolute; font-size: ; left:592px; top: 245px; color: #000; visibility:  hidden;"><strong>Assuming, 8.61 units is equivalent to 100mm</strong></span>
+            <span id="b_value2" style="position:absolute; font-size: ; left:592px; top: 245px; color: #000; visibility:  hidden;"><strong>Assuming, 861 pixels is equivalent to 100mm</strong></span>
 
-            <span id="cal3" style="position:absolute; font-size: ; left:592px; top: 335px; color: #000; visibility:  hidden;"><strong>Y2 = (100/8.61) x 15.44;</strong></span>
+            <span id="cal3" style="position:absolute; font-size: ; left:592px; top: 335px; color: #000; visibility:  hidden;"><strong>Y2 = (100/861) x 1544;</strong></span>
 
-            <span id="cal4" style="position:absolute; font-size: ; left:592px; top: 400px; color: #000; visibility:  hidden;"><strong>Y2 = 179.32 mm</strong></span>
+            <span id="cal4" style="position:absolute; font-size: ; left:592px; top: 400px; color: #000; visibility:  hidden;"><strong>Y2 = 179.326 mm</strong></span>
             <!-- <img src="images/transbox.png" id="transbeam1" style="position: absolute;  visibility: hidden;  height: 50px; width: 400px; left:350px; top:495px;" onclick="movebeam1()"/> -->
 
             <!-- <span class="blink_me" id="arrowtrans3" style="position:absolute; font-size: 30px; left:450px; top:450px; color: ; visibility:hidden ;"><strong><i class="fa fa-arrow-down"></i></strong></span> -->
@@ -459,46 +478,46 @@
             <img src="images/ss1.png"style="position: absolute; left: 5px; top: 35px; visibility:  ; height: 295px; width: 393px; border: 1px dashed #000;"> 
             <img src="images/ss2.png"style="position: absolute; left: 400px; top: 35px; visibility:  ; height: 295px; width: 393px; border: 1px dashed #000;">
 
-<img src="images/linedraw.png"style="position: absolute; left: 450px; top: 365px; visibility:  ; height: 160px; ">
+<!-- <img src="images/linedraw.png"style="position: absolute; left: 450px; top: 365px; visibility:  ; height: 160px; "> 
 
 <span style="position:absolute; left: 425px; top: 435px; color: #000;"> <strong>Y1</strong> </span>
 
 <span style="position:absolute; left: 560px; top: 435px; color: #000;"> <strong>Y2</strong> </span>
 
-<span style="position:absolute; left: 465px; top: 385px; color: #000;"> <strong>8.61</strong> </span>
+<span style="position:absolute; left: 465px; top: 385px; color: #000;"> <strong>861</strong> </span>
 
-<span style="position:absolute; left: 595px; top: 385px; color: #000;"> <strong>8.61</strong> </span>
+<span style="position:absolute; left: 595px; top: 385px; color: #000;"> <strong>861</strong> </span>
 
 
 <img src="images/linedraw.png"style="position: absolute; left: 580px; top: 365px; visibility:  ; height: 160px; ">
+-->
 
 
-
-
-            <span id="type1" style="position:absolute; left: 135px;
+<!--
+            <span id="type1" style="position:absolute; left: 40px;
     top: 335px;
-    font-size: 20px; color: #000;"> <strong>Case 1 : No Weight</strong> </span>
+     font-size: 20px; color: #000;"> <strong>No Weight</strong> </span> 
 
-            <span id="b_value" style="position:absolute; font-size: ; left:30px; top: 375px; color: #000; visibility:   ;"><strong>Assuming, 8.61 units is equivalent to 100mm</strong></span>
+             <span id="b_value" style="position:absolute; font-size: ; left:30px; top: 375px; color: #000; visibility: ;"><strong>Assuming, 861 pixels is equivalent to 100mm</strong></span> 
 
-            <span id="cal1" style="position:absolute; font-size: ; left:30px; top: 405px; color: #000; visibility:   ;"><strong>Y1 = (100/8.61) x 15.30;</strong></span>
-
-            <span id="cal2" style="position:absolute; font-size: ; left: 200px; top: 405px; color: #000; visibility:   ; color: red;"><strong >Y1 = 177.70 mm</strong></span>
-
-
-            <span id="type1" style="position:absolute; left: 515px;
-    top: 335px;
-    font-size: 20px; color: #000;"> <strong>Case 2 : P = 0.43N</strong> </span>
+            <span id="cal1" style="position:absolute; font-size: ; left:30px; top: 405px; color: #000; visibility: ;"><strong>Y1 = (100/861) x 1530;</strong></span>
 
             
 
-            <span id="cal3" style="position:absolute; font-size: ; left:30px; top: 435px; color: #000; visibility:   ;"><strong>Y2 = (100/8.61) x 15.44;</strong></span>
 
-            <span id="cal4" style="position:absolute; font-size: ; left: 200px; top: 435px; color: #000; visibility:   ; color: red;"><strong >Y2 = 179.32 mm</strong></span>
+            <span id="type1" style="position:absolute; left: 460px; top: 335px; font-size: 20px; color: #000;"> <strong>P = 0.43N</strong> </span>
 
-            <span id="b_value2" style="position:absolute; font-size: ; left:30px; top: 475px; color: #000; visibility:   ;"><strong>Deflection, &#8710;Y = Y2 - Y1</strong></span>
+            
 
-            <span id="cal4" style="position:absolute; font-size: ; left: 200px; top: 475px; color: #000; visibility:   ; color: red;"><strong >&#8710;Y = 1.62 mm</strong></span>
+            <span id="cal3" style="position:absolute; font-size: ; left:30px; top: 435px; color: #000; visibility: ;"><strong>Y2 = (100/861) x 1544;</strong></span>
+
+            <span id="cal2" style="position:absolute; font-size: ; left: 200px; top: 405px; color: #000; visibility: ; color: red;"><strong >Y1 = 177.70 mm</strong></span>
+
+            <span id="cal4" style="position:absolute; font-size: ; left: 200px; top: 435px; color: #000; visibility: ; color: red;"><strong >Y2 = 179.326 mm</strong></span>
+-->
+            <span id="b_value2" style="position:absolute; font-size: ; left:30px; top: 400px; color: #000; visibility: ;"><strong>Deflection, &#8710;Y = Y2 - Y1</strong></span>
+
+            <span id="cal4" style="position:absolute; font-size: ; left: 200px; top: 400px; color: #000; visibility: ; color: red;"><strong >&#8710;Y = 1.626 mm</strong></span>
 
 
             <!--Blinking arrowcubox  -->
@@ -506,9 +525,10 @@
 
              <i class="fa fa-hand-o-right" id="nextButton6" style="color: #764C28; position:absolute;visibility:  hidden; left: 750px; top: 510px; font-size: 35px; " onclick="navNext6()"></i>
 
-             <p class="incanvas" id="thanku" style="font-size:15px;position: absolute; visibility: hidden; left: 110px; top: 520px;">Thank You for performing Experiment, to repeat experiment click Restart button. </p>
+             <p class="incanvas" id="thanku" style="font-size:15px;position: absolute; visibility: hidden; left: 110px; top: 510px;">Thank You for performing Experiment, to repeat experiment click Restart button. </p>
 
-            
+            <div id=""  style=" position: absolute; left: 30px; top: 455px; text-align: center; font-weight: bold; color: black; visibility: ;">If you want to perform experiment in real trigger mode <a class="blink_me" style="color: red; font-size: 20px;" href="http://ssdl.iitd.ac.in/vssdl/exp4.html" target="_blank">Click here</a></div>
+	
 </div>  
 
 <!-- step 6a -->
@@ -544,8 +564,12 @@
 
             <i class="fa fa-hand-o-right" id="nextButton6a" style="color: #764C28; position:absolute; left: 750px; top: 510px; font-size: 35px; visibility: hidden;" onclick="navNext6a()"></i>  
 
-<a href="images/Expt4.docx"><button id="arrow_note_dwld" style=" position: absolute; left: 95px; top: 500px; height: 25px; width: 150px;  background-color: steelblue;color: white; visibility: hidden;">Experimental Setup</button></a>
-
+<a href="images/nw.png" download>
+	<button id="arrow_note_dwld" style="position: absolute; left: 120px; top: 350px; height: 25px; width: 175px;  background-color: steelblue;color: white; visibility: hidden;">Download actual picture</button>
+</a>
+<a href="images/ww.png" download>
+	<button id="arrow_note_dwld2" style="position: absolute; left: 520px; top: 350px; height: 25px; width: 175px;  background-color: steelblue;color: white; visibility: hidden;">Download actual picture</button>
+</a>
            
             <!--Blinking arrowcubox  -->
             <span class="blink_me" id="arrowrestart" style="position:absolute; font-size: 30px; left: 664px; top: 511px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>

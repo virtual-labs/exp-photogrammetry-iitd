@@ -1,10 +1,6 @@
-### EXPERIMENTAL METHODOLOGY
+### Theory
 
-This experimental setup is shown in Fig. 1. It consists of a simply supported aluminium beam which acts as
-the structure undergoing deflections. A stationary reference frame with two marks A and B 100 mm apart is
-fixed above the beam. The reference attached to structure is at the mid point of the beam and marked as C.
-The beam is loaded at regular intervals of one hour throughout the day with varying loads, resulting in
-varying deflections. 
+This virtual experiment simulates measurement of structural deflections by image analysis. The simulated experimental setup is shown in Fig. 1. It consists of a simply supported aluminium beam which acts as the structure undergoing deflections. A stationary reference frame with two cross marks A and B 100 mm apart is fixed above the beam. The reference frame C is attached to the beam at the mid-point and marked as C. The beam is loaded leading to deflection and movement of C relative to A and B. The pictures of the set-up  are captured before and after the movement to determine the deflection of the beam.
 
 <center><img src="images/1.jpg" height="400px">
 
