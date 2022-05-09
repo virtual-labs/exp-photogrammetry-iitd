@@ -78,7 +78,6 @@ Thank You for performing Experiment.
 
 Click on restart button.
 
-<img src="images/pr17.png"/>
 
 
 <!-- **POST EXPERIMENT QUIZ QUESTIONS**
